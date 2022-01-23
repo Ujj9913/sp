@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+body{
+    overflow: visible;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    font-family: 'Noto Serif',serif;
+    max-width: 1200px;
+    background-color: rgb(20, 20, 20);
+
+}
+.nav navall{
+    width: 100%;
+}
+p,h1,a,h2,ul{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #222;
+
+}
+h3{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color:white;
+    
+    margin-left: 10px;
+}
+nav img{
+    height: 35px;
+    width: 35px;
+}
+
+
+  
+
+nav{
+    
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid#ddd;
+    text-transform: uppercase;
+}
+
+nav ul{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+nav li{
+    
+    list-style: none;
+    margin-left: 20px;
+
+}
+.navlist a:hover {
+    background-color: black;
+    color: rgb(39, 236, 98);
+  }
+nav h1{
+    font-size: 3em;
+}
+nav p,nav a{
+    color: #777;
+    font-weight: 300;
+}
+footer{
+    color: #777;
+    text-align: center;
+    margin: 80px auto 20px;
+}
+h2{
+    margin-bottom:40px;
+}
+h3{
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+/* 
+.content{
+    margin-left:20px ;
+}
+.blogs a{
+    display: block;
+    margin: 40px 0;
+    padding: 30px;
+    border-left:  6px solid crimson ;
+}
+.blogs a:hover h3{
+    color: crimson;
+}
+.details{
+    position: relative;
+}
+.details a{
+    
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    padding: 8px;
+    color: crimson;
+}
+.emp{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    color: #777;
+    
+    
+
+}
+ */
+.prologin form{
+    max-width: 350px;
+    margin: 0 auto;
+}
+.prologin h1{
+    color: white;
+    margin-left: 35%;
+}
+.prologin label{
+    margin-left: 2%;
+    display: block;
+    margin-top:24px ;
+    color: white;
+}
+.prologin input{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+
+    padding: 8px;
+    border: 3px solid rgb(39, 236, 98);
+    padding: 10px;
+    border-radius: 25px;
+}
+textarea{
+    height: 120px;
+}
+.login{
+    width: 50%;
+    height: 80%;
+        background-color: rgb(39, 236, 98); /* Green */
+        color: white;
+        padding: 10px 20px;
+        margin: 10px 0;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        margin-left: 25%;
+        cursor: pointer;
+        margin-top: 25px;
+        border-radius: 25px;
+        
+       
+}
+
+.login {
+    background-color: white; 
+    color: black; 
+    border: 3px solid rgb(39, 236, 98);
+  }
+  
+  .login:hover {
+    background-color: rgb(39, 236, 98);
+    color: white;
+  }
+
