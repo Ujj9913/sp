@@ -3,48 +3,50 @@
 <%- include('./partials/header.ejs') %>
 
     <body>
-        <%- include('./partials/navlogin.ejs') %>
+        <%- include('./partials/navsign.ejs') %>
             <!-- <%- include('./partials/sidenav.ejs') %> -->
 
             <div class="prologin">
-                <form action="/login" method="post">
-                    <h1>Login</h1>
-                    <label for="name">Name</label>
-                    <input autocomplete="off" name="name" placeholder="Enter the name" type="text" id="name" required>
-                    <label for="email">Email</label>
+                <form class="change"  >
+                    <h2 class="up">Update Password</h2>
+                   <label for="email">Email</label>
                     <input autocomplete="off" id="email" name="email" placeholder="Enter the Email-id" type="email" required>
                     <label for="password">Password</label>
                     <input autocomplete="off" name="password" placeholder="Enter the password" type="password"
                         id="password" required>
-                   <a class="change" href="/change">change password</a>    
-                    <button type="submit" id="login" class="login" value="submit form">Login</button>
+                   <label for="new-password">New-Password</label>
+                    <input autocomplete="off" name="newpass" placeholder="Enter the New password" type="password"
+                        id="password" required>
+                  
+                   <button type="submit" id="change" class="login" value="submit form">confirm</button>
                 </form>
-                <!-- <script>
-                    const form = document.getElementById('loginform')
+                <script>
+                    const form = document.getElementById('change')
                     form.addEventListener('submit', registerUser)
 
 
                     async function registerUser(event) {
 
                         event.preventDefault();
-                        const name = document.getElementById('name').value
-                        const email = document.getElementById('email').value
                         const password = document.getElementById('password').value
 
-                        const result = await fetch('/api/register', {
+                        const result = await fetch('/change', {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'appliction/json'
                             },
                             body: JSON.stringify({
-                                name,
-                                 email, 
-                                 password
+                                newpass:password, 
+                                token:localStorage.getItem('token')
                             })
                         }).then((res) => res.json())
-                        console.log(result)
+                        if(result.status === 'ok'){
+                            console.log('Got the Token',result.data)
+                            localStorage.setItem('token',result.data)
+                            
+                        }
                     }
-                </script> -->
+                </script>
             </div>
 
     </body>

@@ -15,7 +15,7 @@ const ragiSchema=new mongoose.Schema({
     },
     patname:{
         type:String,
-        required:true
+        
     },
     bod:{
         type:Date,

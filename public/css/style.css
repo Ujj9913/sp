@@ -30,6 +30,7 @@ h3{
 nav img{
     height: 35px;
     width: 35px;
+    margin-top: 0px;
 }
 
 
@@ -80,43 +81,6 @@ h3{
     text-transform: capitalize;
     margin-bottom: 8px;
 }
-/* 
-.content{
-    margin-left:20px ;
-}
-.blogs a{
-    display: block;
-    margin: 40px 0;
-    padding: 30px;
-    border-left:  6px solid crimson ;
-}
-.blogs a:hover h3{
-    color: crimson;
-}
-.details{
-    position: relative;
-}
-.details a{
-    
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-radius: 50%;
-    padding: 8px;
-    color: crimson;
-}
-.emp{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    text-align: center;
-    color: #777;
-    
-    
-
-}
- */
 .prologin form{
     max-width: 350px;
     margin: 0 auto;
@@ -125,12 +89,23 @@ h3{
     color: white;
     margin-left: 35%;
 }
+.prologin .up {
+    color: white;
+    margin-left: 25%;
+}
 .prologin label{
     margin-left: 2%;
     display: block;
     margin-top:24px ;
     color: white;
 }
+.prologin h3{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: rgb(39, 236, 98)e;
+}
+
 .prologin input{
     display: block;
     width: 100%;
@@ -144,6 +119,18 @@ h3{
 textarea{
     height: 120px;
 }
+
+.change {
+    font-size: 13px;
+    color: white; 
+    margin-left: 3%;
+   
+}
+.change:hover{
+    color:   rgb(39, 236, 98);
+    
+}
+
 .login{
     width: 50%;
     height: 80%;
