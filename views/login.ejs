@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/header.ejs') %>
-<body>
-    <%- include('./partials/navlogin.ejs') %>
-    <!-- <%- include('./partials/sidenav.ejs') %> -->
-   
-    <div class="prologin">
-        <form>
-            <h1>Login</h1>
-            <label for="name">Name</label>
-            <input autocomplete="off" name="name" placeholder="Enter the name" type="text" id="name" required>
-            <label for="email">Email</label>
-            <input id="email" name="email" placeholder="Enter the Email-id" type="email" required>
-            <label for="password">Password</label>
-            <input autocomplete="off" name="password" placeholder="Enter the password" type="password" id="password"
-                required>
-            <button id="login"class="login">Login</button>
-        </form>
+<%- include('./partials/header.ejs') %>
 
-    </div>
-   
-</body>
+    <body>
+        <%- include('./partials/navlogin.ejs') %>
+            <!-- <%- include('./partials/sidenav.ejs') %> -->
+
+            <div class="prologin">
+                <form action="/login" method="post">
+                    <h1>Login</h1>
+                    <label for="name">Name</label>
+                    <input autocomplete="off" name="name" placeholder="Enter the name" type="text" id="name" required>
+                    <label for="email">Email</label>
+                    <input autocomplete="off" id="email" name="email" placeholder="Enter the Email-id" type="email" required>
+                    <label for="password">Password</label>
+                    <input autocomplete="off" name="password" placeholder="Enter the password" type="password"
+                        id="password" required>
+                    <button type="submit" id="login" class="login" value="submit form">Login</button>
+                </form>
+                <!-- <script>
+                    const form = document.getElementById('loginform')
+                    form.addEventListener('submit', registerUser)
+
+
+                    async function registerUser(event) {
+
+                        event.preventDefault();
+                        const name = document.getElementById('name').value
+                        const email = document.getElementById('email').value
+                        const password = document.getElementById('password').value
+
+                        const result = await fetch('/api/register', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'appliction/json'
+                            },
+                            body: JSON.stringify({
+                                name,
+                                 email, 
+                                 password
+                            })
+                        }).then((res) => res.json())
+                        console.log(result)
+                    }
+                </script> -->
+            </div>
+
+    </body>
 
 </html>
