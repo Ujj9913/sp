@@ -6,7 +6,7 @@ body{
     padding: 0 20px;
     font-family: 'Noto Serif',serif;
     max-width: 1200px;
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(30, 30, 30);
 
 }
 .nav navall{
@@ -85,10 +85,7 @@ h3{
     max-width: 350px;
     margin: 0 auto;
 }
-.prologin h1{
-    color: white;
-    margin-left: 35%;
-}
+
 .prologin .up {
     color: white;
     margin-left: 25%;
@@ -160,3 +157,53 @@ textarea{
     color: white;
   }
 
+  /* this part to css to add the home page  */
+  .songs a{
+     display: block;
+
+     padding-top: 0%;
+     /* border: 3px solid rgb(39, 236, 98);
+      */
+  }
+  .song h2{
+      
+        color: white;
+        margin-left: 35%;
+    
+  }
+  .songs a:hover h3{
+   color: rgb(39, 236, 98);
+   background-color: black;
+
+  }
+  .creater {
+      color: white;
+
+  }
+  .emp{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    color: #777;
+    
+    
+
+}
+.chfile{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    background-color: white;
+    padding: 8px;
+    border: 3px solid rgb(39, 236, 98);
+    padding: 10px;
+    border-radius: 25px;
+}
+.logo{
+  height: 30px;
+  width: 30px;
+
+  border-radius:50%;
+  
+}

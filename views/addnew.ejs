@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/header.ejs') %>
+<body>
+    <%- include('./partials/navout.ejs') %>
+    <div class="prologin">
+        <form action="/addnew" method="post" enctype="multipart/form-data">
+            <h2 class="up">Add New Song</h2>
+            <label for="tital">Title of song:</label>
+            <input autocomplete="off" name="title" placeholder="Title"  type="text" id="title" required>
+            <label for="sniped">Creater Name</label>
+            <input autocomplete="off" name="Creater" placeholder="Creater" type="text" id="shiped" required>
+            <label for="file">Where is your file?</label>
+            <input class="chfile" autocomplete="off" name="file" accept="audio/*" id="song" type="file"  required></textarea>
+            <button class="login">Submit</button>            
+        </form>
+    </div>
+    
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>

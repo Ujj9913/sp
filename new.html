@@ -1,0 +1,19 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+
+<p>Press play.</p>
+
+<audio src="/public/css/mu.mp3" controls>
+   
+</audio>
+
+<script>
+var aud = document.getElementById("myAudio");
+aud.onplay = function() {
+  alert("The audio has started to play");
+};
+</script>
+
+</body> 
+</html>
